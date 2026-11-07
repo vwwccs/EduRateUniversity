@@ -1,0 +1,13 @@
+{
+  "name": "edurate",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "edurate",
+      "database_id": "2da9bc01-3245-4851-b6ad-19e13717340d"
+    }
+  ],
+  "observability": { "enabled": true }
+}
