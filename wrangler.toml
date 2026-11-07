@@ -1,0 +1,9 @@
+
+name = "edurate-universitu"
+main = "backend/worker.js"
+compatibility_date = "2026-11-07"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "edurate-universitu"
+database_id = "4f55eaa1-17a3-4641-b622-cf551f766f82"
