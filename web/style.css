@@ -446,3 +446,82 @@ td {
     font-size: 20px;
   }
 }
+
+.auth-container {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 35px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.auth-logo {
+  font-size: 42px;
+}
+
+.auth-card h1 {
+  margin-bottom: 8px;
+}
+
+.auth-card > p {
+  color: var(--muted);
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.auth-tabs button,
+#authSubmit {
+  flex: 1;
+  padding: 13px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+#authForm {
+  display: grid;
+  gap: 14px;
+}
+
+#authForm input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-light);
+  color: var(--text);
+}
+
+#authMessage {
+  overflow-wrap: anywhere;
+  margin-top: 18px;
+}
+
+.auth-card button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+#profileLogout {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #c43b4b;
+  color: white;
+  cursor: pointer;
+}
