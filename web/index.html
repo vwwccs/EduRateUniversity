@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="EduRate — система рейтинга и посещаемости студентов">
   <title>EduRate — Университетская система</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,16 +17,16 @@
     <div class="logo">Edu<span>Rate</span></div>
     <p class="sidebar-label">ГЛАВНОЕ МЕНЮ</p>
 
-     <nav>
-  <a class="nav-item active" data-page="home" href="#home">⌂ Главная</a>
-  <a class="nav-item" data-page="profile" href="#profile">▦ Мой профиль</a>
-  <a class="nav-item" data-page="attendance" href="#attendance">◷ Посещаемость</a>
-  <a class="nav-item" data-page="grades" href="#grades">▤ Оценки</a>
-  <a class="nav-item" data-page="rating" href="#rating">🏆 Рейтинг</a>
-  <a class="nav-item" data-page="schedule" href="#schedule">▣ Расписание</a>
-  <a class="nav-item" data-page="calendar" href="#calendar">▦ Календарь</a>
-  <a class="nav-item" data-page="announcements" href="#announcements">📢 Объявления</a>
-</nav>
+    <nav>
+      <a class="nav-item active" data-page="home" href="#home">⌂ Главная</a>
+      <a class="nav-item" data-page="profile" href="#profile">▦ Мой профиль</a>
+      <a class="nav-item" data-page="attendance" href="#attendance">◷ Посещаемость</a>
+      <a class="nav-item" data-page="grades" href="#grades">▤ Оценки</a>
+      <a class="nav-item" data-page="rating" href="#rating">🏆 Рейтинг</a>
+      <a class="nav-item" data-page="schedule" href="#schedule">▣ Расписание</a>
+      <a class="nav-item" data-page="calendar" href="#calendar">▦ Календарь</a>
+      <a class="nav-item" data-page="announcements" href="#announcements">📢 Объявления</a>
+    </nav>
 
     <div class="sidebar-bottom">
       <p>EduRate University</p>
@@ -40,6 +41,7 @@
         <h2>Главная</h2>
         <p>Информационная система университета</p>
       </div>
+
       <div class="top-actions">
         <button class="icon-button" aria-label="Уведомления">♧</button>
         <div class="user-avatar">U</div>
@@ -51,8 +53,11 @@
         <span class="welcome-label">EDURATE UNIVERSITY</span>
         <h1>Добро пожаловать!</h1>
         <p>Управляйте обучением, отслеживайте успеваемость и посещаемость в одном месте.</p>
-        <button class="primary-button">Открыть личный кабинет →</button>
+        <button class="primary-button" onclick="location.hash='#profile'">
+          Открыть личный кабинет →
+        </button>
       </div>
+
       <div class="welcome-icon">🎓</div>
     </section>
 
@@ -63,6 +68,7 @@
       </div>
 
       <div class="stats-grid">
+
         <article class="stat-card">
           <div class="stat-icon blue">👨‍🎓</div>
           <p>Студенты</p>
@@ -90,12 +96,15 @@
           <h3>—</h3>
           <small>Рейтинг университета</small>
         </article>
+
       </div>
     </section>
 
     <section class="bottom-grid">
+
       <article class="content-card">
         <h2>Последние объявления</h2>
+
         <div class="empty-state">
           <div>📢</div>
           <p>Пока объявлений нет</p>
@@ -105,13 +114,15 @@
 
       <article class="content-card">
         <h2>Быстрый доступ</h2>
+
         <div class="quick-links">
-          <a href="#">📚 Мои предметы</a>
-          <a href="#">📊 Моя успеваемость</a>
-          <a href="#">📅 Расписание занятий</a>
-          <a href="#">📝 Журнал посещаемости</a>
+          <a href="#grades">📚 Мои предметы</a>
+          <a href="#rating">📊 Моя успеваемость</a>
+          <a href="#schedule">📅 Расписание занятий</a>
+          <a href="#attendance">📝 Журнал посещаемости</a>
         </div>
       </article>
+
     </section>
 
     <footer>
@@ -120,6 +131,9 @@
 
   </main>
 </div>
+
+<!-- JavaScript приложения -->
+<script src="./app.js"></script>
 
 </body>
 </html>
