@@ -1,12 +1,124 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
   <title>EduRate — Университетская система</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>EduRate</h1>
-  <p>Система рейтинга и посещаемости студентов</p>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">Edu<span>Rate</span></div>
+    <p class="sidebar-label">ГЛАВНОЕ МЕНЮ</p>
+
+    <nav>
+      <a class="nav-item active" href="#">⌂ Главная</a>
+      <a class="nav-item" href="#">▦ Мой профиль</a>
+      <a class="nav-item" href="#">◷ Посещаемость</a>
+      <a class="nav-item" href="#">▤ Оценки</a>
+      <a class="nav-item" href="#">🏆 Рейтинг</a>
+      <a class="nav-item" href="#">▣ Расписание</a>
+      <a class="nav-item" href="#">▦ Календарь</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <p>EduRate University</p>
+      <small>Версия 1.0.0</small>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h2>Главная</h2>
+        <p>Информационная система университета</p>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button" aria-label="Уведомления">♧</button>
+        <div class="user-avatar">U</div>
+      </div>
+    </header>
+
+    <section class="welcome">
+      <div>
+        <span class="welcome-label">EDURATE UNIVERSITY</span>
+        <h1>Добро пожаловать!</h1>
+        <p>Управляйте обучением, отслеживайте успеваемость и посещаемость в одном месте.</p>
+        <button class="primary-button">Открыть личный кабинет →</button>
+      </div>
+      <div class="welcome-icon">🎓</div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Общая статистика</h2>
+        <span>Учебная информация</span>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <div class="stat-icon blue">👨‍🎓</div>
+          <p>Студенты</p>
+          <h3>—</h3>
+          <small>Всего зарегистрировано</small>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon green">✓</div>
+          <p>Посещаемость</p>
+          <h3>—</h3>
+          <small>Данные появятся после подключения базы</small>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon orange">★</div>
+          <p>Средний балл</p>
+          <h3>—</h3>
+          <small>Успеваемость студентов</small>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon purple">🏆</div>
+          <p>Рейтинг</p>
+          <h3>—</h3>
+          <small>Рейтинг университета</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="content-card">
+        <h2>Последние объявления</h2>
+        <div class="empty-state">
+          <div>📢</div>
+          <p>Пока объявлений нет</p>
+          <small>Здесь будут отображаться новости университета.</small>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <h2>Быстрый доступ</h2>
+        <div class="quick-links">
+          <a href="#">📚 Мои предметы</a>
+          <a href="#">📊 Моя успеваемость</a>
+          <a href="#">📅 Расписание занятий</a>
+          <a href="#">📝 Журнал посещаемости</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © 2026 EduRate University. Все права защищены.
+    </footer>
+
+  </main>
+</div>
+
 </body>
 </html>
